@@ -1,0 +1,19 @@
+<% include header %>
+<% if(entradas.length) { %>
+  <% entradas.forEach(function(entrada) { %>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="text-muted pull-right">
+            <%= entrada.publicado %>
+        </div>
+        <%= entrada.titulo %>
+      </div>
+      <div class="panel-body">
+        <%= entrada.cuerpo %>
+      </div>
+    </div>
+  <% }) %>
+  <%} else { %>
+    No hay entradas! <a href="/nueva-entrada">Agrega una!</a>
+  <% } %>
+<% include footer %>

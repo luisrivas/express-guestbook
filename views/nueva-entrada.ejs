@@ -1,0 +1,17 @@
+<% include header %>
+
+<h2>Escribe una entrada</h2>
+<form method="post" role="form">
+  <div class="form-group">
+    <label for="title">Título:</label>
+    <input class="form-control" type="text" name="titulo" placeholder="Introduce el título" id="title" required>
+  </div>
+  <div class="form-group">
+    <label for="body">Mensaje:</label>
+    <textarea class="form-control" name="cuerpo" placeholder="Introduce un gran mensaje!" rows="3" id="body" required></textarea>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">Enviar</button
+  </div>
+</form>
+<% include footer %>
